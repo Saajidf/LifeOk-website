@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0054)http://bootsnipp-env.elasticbeanstalk.com/iframe/p1ZVE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-
-    <title>LifeOk - Login</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-       
+    <title>Custom Login, Registration &amp; Forgot Password - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./Custom Login, Registration &amp; Forgot Password - Bootsnipp.com_files/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style type="text/css">
-html,
+    /*------------------------------------------------------------------
+[Master Stylesheet]
 
+Project    	: Aether
+Version		: 1.0
+Last change	: 2015/03/27
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General Structure
+2. Anchor Link
+3. Text Outside the Box
+4. Main Form
+5. Login Button
+6. Form Invalid
+7. Form - Main Message
+8. Custom Checkbox & Radio
+9. Misc
+-------------------------------------------------------------------*/
+/*=== 1. General Structure ===*/
+html,
+body {
+  background: #efefef;
+  padding: 10px;
+  font-family: 'Varela Round';
+}
 /*=== 2. Anchor Link ===*/
 a {
   color: #aaaaaa;
@@ -226,7 +226,7 @@ label.form-invalid:after {
 /* checked mark aspect changes */
 [type="checkbox"]:not(:checked) + label:after,
 [type="radio"]:not(:checked) + label:after {
-  opacity: a0;
+  opacity: 0;
   transform: scale(0);
 }
 [type="checkbox"]:checked + label:after,
@@ -297,7 +297,8 @@ label:hover:before {
 }
 
     </style>
-   
+    <script src="./Custom Login, Registration &amp; Forgot Password - Bootsnipp.com_files/jquery-1.10.2.min.js"></script>
+    <script src="./Custom Login, Registration &amp; Forgot Password - Bootsnipp.com_files/bootstrap.min.js"></script>
     <script type="text/javascript">
         window.alert = function(){};
         var defaultCSS = document.getElementById('bootstrap-css');
@@ -310,48 +311,24 @@ label:hover:before {
           window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
         });
     </script>
-    
 </head>
+<body>
+	<!-- All the files that are required -->
+<link rel="stylesheet" href="./Custom Login, Registration &amp; Forgot Password - Bootsnipp.com_files/font-awesome.min.css">
+<link href="./Custom Login, Registration &amp; Forgot Password - Bootsnipp.com_files/css" rel="stylesheet" type="text/css">
+<script src="./Custom Login, Registration &amp; Forgot Password - Bootsnipp.com_files/jquery.validate.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<body id="page-top" class="index">
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+<!-- Where all the magic happens -->
+<!-- LOGIN FORM -->
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Life-Ok</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container" id="maincontent" tabindex="-1">
-            <div class="row">
-                <div class="col-lg-12">
-            <div class="logo" color = "#ffffff"><font color = "white">Register</font></div>
 	
+	<!-- end:Main Form -->
+
+
+<!-- REGISTRATION FORM -->
+<div align= "center" class="text-center" style="padding:50px 0">
+	<div class="logo">register</div>
 	<!-- Main Form -->
 	<div class="login-form-1">
 		<form id="register-form" class="text-left" novalidate="novalidate">
@@ -359,72 +336,217 @@ label:hover:before {
 			<div class="main-login-form">
 				<div class="login-group">
 					<div class="form-group">
-						<label for="reg_username" class="sr-only">Name</label>
-						<input type="text" class="form-control" id="reg_name" name="reg_name" placeholder="Name">
+						<label for="reg_username" class="sr-only">Email address</label>
+						<input type="text" class="form-control" id="reg_username" name="reg_username" placeholder="username">
 					</div>
 					<div class="form-group">
 						<label for="reg_password" class="sr-only">Password</label>
-						<input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="Password">
-					</div>					
+						<input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="password">
+					</div>
+					<div class="form-group">
+						<label for="reg_password_confirm" class="sr-only">Password Confirm</label>
+						<input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="confirm password">
+					</div>
+					
 					<div class="form-group">
 						<label for="reg_email" class="sr-only">Email</label>
-						<input type="text" class="form-control" id="reg_email" name="reg_email" placeholder="Email">
+						<input type="text" class="form-control" id="reg_email" name="reg_email" placeholder="email">
 					</div>
-                    <div class="form-group">
-						<label for="the_email" class="sr-only">Therapist Email</label>
-						<input type="text" class="form-control" id="the_email" name="the_email" placeholder="Therapist Email">
+					<div class="form-group">
+						<label for="reg_fullname" class="sr-only">Full Name</label>
+						<input type="text" class="form-control" id="reg_fullname" name="reg_fullname" placeholder="full name">
 					</div>
+					
+					<div class="form-group login-group-checkbox">
+						<input type="radio" class="" name="reg_gender" id="patient" placeholder="username">
+						<label for="patient">Patient</label>
 						
+						<input type="radio" class="" name="reg_gender" id="therapist" placeholder="username">
+						<label for="therapist">Therapist</label>
+					</div>
+					
 					<div class="form-group login-group-checkbox">
 						<input type="checkbox" class="" id="reg_agree" name="reg_agree">
 						<label for="reg_agree">I agree with <a href="http://bootsnipp-env.elasticbeanstalk.com/iframe/p1ZVE#">terms</a></label>
 					</div>
 				</div>
-				<button type="submit" class="login-button" onclick="redirect()";><i class="fa fa-chevron-right"></i></button>
+				<button type="submit" class="login-button" onclick="redirect()";><i class="fa fa-chevron-right"></i> <img src="sources/Iconsmind-Outline-Arrow-Right.ico" alt="Go" style="width:15px;height:15px;"></button>
 			</div>
 			<div class="etc-login-form">
-                <p><font color = "white">already have an account?</font> <a href="log.html"><font color = "black">login here</font></a></p>
+				<p>already have an account? <a href="index.html">login here</a></p>
 			</div>
 		</form>
 	</div>
 	<!-- end:Main Form -->
 </div>
-                    </div>
-                </div>
-            
 
-    </header>
+<!-- FORGOT PASSWORD FORM -->
+    <script type="text/javascript">
+    function redirect()
+    {
+    var url = "index.html";
+    window.location(url);
+    }
+    </script>
 
-    <!-- Portfolio Grid Section -->
+	<script type="text/javascript">
+	(function($) {
+    "use strict";
+	
+	// Options for Message
+	//----------------------------------------------
+  var options = {
+	  'btn-loading': '<i class="fa fa-spinner fa-pulse"></i>',
+	  'btn-success': '<i class="fa fa-check"></i>',
+	  'btn-error': '<i class="fa fa-remove"></i>',
+	  'msg-success': 'All Good! Redirecting...',
+	  'msg-error': 'Wrong login credentials!',
+	  'useAJAX': true,
+  };
 
-    <!-- About Section -->
+	// Login Form
+	//----------------------------------------------
+	// Validation
+  $("#login-form").validate({
+  	rules: {
+      lg_username: "required",
+  	  lg_password: "required",
+    },
+  	errorClass: "form-invalid"
+  });
+  
+	// Form Submission
+  $("#login-form").submit(function() {
+  	remove_loading($(this));
+		
+		if(options['useAJAX'] == true)
+		{
+			// Dummy AJAX request (Replace this with your AJAX code)
+		  // If you don't want to use AJAX, remove this
+  	  dummy_submit_form($(this));
+		
+		  // Cancel the normal submission.
+		  // If you don't want to use AJAX, remove this
+  	  return false;
+		}
+  });
+	
+	// Register Form
+	//----------------------------------------------
+	// Validation
+  $("#register-form").validate({
+  	rules: {
+      reg_username: "required",
+  	  reg_password: {
+  			required: true,
+  			minlength: 5
+  		},
+   		reg_password_confirm: {
+  			required: true,
+  			minlength: 5,
+  			equalTo: "#register-form [name=reg_password]"
+  		},
+  		reg_email: {
+  	    required: true,
+  			email: true
+  		},
+  		reg_agree: "required",
+    },
+	  errorClass: "form-invalid",
+	  errorPlacement: function( label, element ) {
+	    if( element.attr( "type" ) === "checkbox" || element.attr( "type" ) === "radio" ) {
+    		element.parent().append( label ); // this would append the label after all your checkboxes/labels (so the error-label will be the last element in <div class="controls"> )
+	    }
+			else {
+  	  	label.insertAfter( element ); // standard behaviour
+  	  }
+    }
+  });
 
-    <!-- Contact Section -->
-    
+  // Form Submission
+  $("#register-form").submit(function() {
+  	remove_loading($(this));
+		
+		if(options['useAJAX'] == true)
+		{
+			// Dummy AJAX request (Replace this with your AJAX code)
+		  // If you don't want to use AJAX, remove this
+  	  dummy_submit_form($(this));
+		
+		  // Cancel the normal submission.
+		  // If you don't want to use AJAX, remove this
+  	  return false;
+		}
+  });
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	// Forgot Password Form
+	//----------------------------------------------
+	// Validation
+  $("#forgot-password-form").validate({
+  	rules: {
+      fp_email: "required",
+    },
+  	errorClass: "form-invalid"
+  });
+  
+	// Form Submission
+  $("#forgot-password-form").submit(function() {
+  	remove_loading($(this));
+		
+		if(options['useAJAX'] == true)
+		{
+			// Dummy AJAX request (Replace this with your AJAX code)
+		  // If you don't want to use AJAX, remove this
+  	  dummy_submit_form($(this));
+		
+		  // Cancel the normal submission.
+		  // If you don't want to use AJAX, remove this
+  	  return false;
+		}
+  });
+
+	// Loading
+	//----------------------------------------------
+  function remove_loading($form)
+  {
+  	$form.find('[type=submit]').removeClass('error success');
+  	$form.find('.login-form-main-message').removeClass('show error success').html('');
+  }
+
+  function form_loading($form)
+  {
+    $form.find('[type=submit]').addClass('clicked').html(options['btn-loading']);
+  }
+  
+  function form_success($form)
+  {
+	  $form.find('[type=submit]').addClass('success').html(options['btn-success']);
+	  $form.find('.login-form-main-message').addClass('show success').html(options['msg-success']);
+  }
+
+  function form_failed($form)
+  {
+  	$form.find('[type=submit]').addClass('error').html(options['btn-error']);
+  	$form.find('.login-form-main-message').addClass('show error').html(options['msg-error']);
+  }
+
+	// Dummy Submit Form (Remove this)
+	//----------------------------------------------
+	// This is just a dummy form submission. You should use your AJAX function or remove this function if you are not using AJAX.
+  function dummy_submit_form($form)
+  {
+  	if($form.valid())
+  	{
+  		form_loading($form);
+  		
+  		setTimeout(function() {
+  			form_success($form);
+  		}, 2000);
+  	}
+  }
+	
+})(jQuery);
+	</script>
 
 
-    <!-- Portfolio Modals -->
-   
-     
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
-</body>
-
-</html>
+</body></html>
